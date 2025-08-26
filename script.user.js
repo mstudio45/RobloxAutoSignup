@@ -104,7 +104,7 @@ async function typeIntoInput(element, sentence, speed = 125) {
 async function changeValue(element, value) {
     await simulateMouseMovement(element);
     element.focus();
-    await sleep(250);
+    await sleep(351);
 
     const nativeSetter = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, "value").set;
     nativeSetter.call(element, value);
@@ -112,7 +112,7 @@ async function changeValue(element, value) {
     element.dispatchEvent(new Event("input", { bubbles: true }));
     element.dispatchEvent(new Event("change", { bubbles: true }));
 
-    await sleep(750);
+    await sleep(775);
 }
 
 // handler //
@@ -132,9 +132,9 @@ async function createAccount() {
     const dayInput = document.querySelector("#DayDropdown");
 
     // change birthday //
-    changeValue(monthInput, profile.birthday.month)
-    changeValue(dayInput, profile.birthday.day)
-    changeValue(yearInput, profile.birthday.year)
+    changeValue(monthInput, profile.birthday.month); await sleep(10);
+    changeValue(dayInput, profile.birthday.day); await sleep(10);
+    changeValue(yearInput, profile.birthday.year); await sleep(10);
     await sleep(469);
 
     // type username //
