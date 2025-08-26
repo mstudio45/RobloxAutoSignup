@@ -7,6 +7,8 @@
 // @match        https://*.roblox.com/CreateAccount
 // @match        https://*.roblox.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
+// @updateURL    https://github.com/mstudio45/RobloxAutoSignup/raw/refs/heads/main/script.user.js
+// @downloadURL  https://github.com/mstudio45/RobloxAutoSignup/raw/refs/heads/main/script.user.js
 // @grant        none
 // ==/UserScript==
 
