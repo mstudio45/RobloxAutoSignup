@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Roblox Alt Creator
 // @namespace    http://tampermonkey.net/
-// @version      v1.0.1
+// @version      v1.0.2
 // @description  Automatically and quickly fills out the Sign Up page, generates a strong password, and copies the login to the clipboard.
 // @author       mstudio45
 // @match        https://*.roblox.com/CreateAccount
+// @match        https://*.roblox.com/CreateAccount?*
 // @match        https://*.roblox.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
 // @updateURL    https://github.com/mstudio45/RobloxAutoSignup/raw/refs/heads/main/script.user.js
@@ -171,6 +172,10 @@ async function createAccount() {
     // Set gender //
     await simulateMouseMovement(genderButton);
     genderButton.click();
+    await sleep(150);
+
+    // Click Accept //
+    try { document.querySelector("#signup-checkbox").click(); } catch { }
     await sleep(150);
 
     // Click Sign Up //
