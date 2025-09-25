@@ -1,2 +1,2 @@
 # RobloxAutoSignup
-User-script that will automatically creates an Roblox account on the "Create Account" page. 
+User-script that will automatically make an Roblox account on the "Create Account" page. 
