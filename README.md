@@ -1,2 +1,2 @@
 # RobloxAutoSignup
-Create an Roblox account automatically on the Create Account page without triggering captcha in a lot of cases.
+User-script that will automatically creates an Roblox account on the "Create Account" page. 
